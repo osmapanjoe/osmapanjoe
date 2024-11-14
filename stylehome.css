@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 15px;
+    width: 100vh;
+    height: 50px;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    padding:25px;
+    text-transform: capitalize;
+}
+
+.firstname {
+    color: white;
+    font-weight: 800;                                                                                                                                         
+    font-size: 25px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lastname {
+    color: #BE4346;
+    font-weight: 700;
+    padding-left: 4px;
+    font-size: 25px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+ /* Add a black background color to the top navigation */
+  .sesi {
+    background-color: #333;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    overflow: hiden;
+  }
+  /* Style the links inside the navigation bar */
+  .sesi a {
+    display: flex;
+    flex-direction: row;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .sesi a:hover {
+    background-color: #BE4346;
+    color: black;
+  }  
+  /* Hide the link that should open and close the topnav on small screens */
+ .tumpuk {
+    display: none;
+  } 
+  .content {
+    background-color: #17161C;
+    display: flex;
+    flex-direction:column;
+    padding-left: 15px;
+  }
+
+  .content>h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    padding-bottom: 2rem;
+  }
+
+  .struktur {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    background-size: 50%;
+    color: white ;
+    text-decoration: none;
+    border-radius: 2px;
+    padding-bottom: 15px;
+  }
+
+  .inti {
+   display: flex;
+   padding-left: 15px;
+   flex-direction: space-between;
+   text-transform: capitalize;
+   border: 8px rgb(102, 147, 224)
+  }
+
+  .inti>li>img {
+   width: 125px;
+   list-style-type: none;
+  }
+
+  .nama {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+
+  .klepon {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+  }
+  
+  .klepon>h1 {
+    color:#BE4346;
+  }
+  
+  .klepon>p {
+    color: white;
+  }
+
+  @media (max-width: 600px) {
+    html {
+        font-size: 70%;
+    }
+    .wrapper {
+      width: 90%;
+    }
+    .tumpuk {
+        display: inline-block;
+        padding-right: -25px;
+    }
+   
+    .sesi {
+        position: fixed;
+        top: 0%;
+        right: -100%;
+        background-color: #333;
+        color: rgb(255, 255, 255);
+        width: 35%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        margin: 1.5rem;
+        padding: 0.7rem;
+        transition: 0.3s;
+        font-size: 1.5rem;
+    }
+    .sesi.active {
+        right: -10%;
+    }
+}
